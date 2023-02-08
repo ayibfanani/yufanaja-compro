@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .text-primary {
-      color: #7CA655 !important;
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7CA655',
+          }
+        }
+      }
     }
-  </style>
+  </script>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
     <div class="h-screen bg-white bg-cover bg-center" style="background-image: url('./assets/images/bg1.png')">
       <div class="grid grid-cols-2 h-full place-content-center">
         <div class="col-start-2 col-span-4 ml-8 pr-10" style="margin-top: -4rem;">
-          <img src="./assets//images/logo1.png" alt="Logo 1" class="w-3/6 mb-6 mx-auto">
+          <img src="./assets/images/logo1.png" alt="Logo 1" class="w-3/6 mb-6 mx-auto">
 
           <h2 class="text-2xl font-medium text-center">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
           <br>
@@ -38,7 +44,13 @@
         <br>
         <div class="grid grid-cols-2 h-full place-content-center">
           <div class="col-start-1 px-8">
-            <h1 class="text-5xl font-bold text-center mb-16">Tentang Perusahaan</h1>
+            <h1 class="text-5xl font-bold text-center mb-10">Tentang Perusahaan</h1>
+            <div class="mb-6">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
 
             <h3 class="text-2xl font-medium text-primary mb-3">CV. YUFA NAJA GROUP</h3>
             <p class="text-justify">Didirikan di Surabaya, Jawa Timur tahun 2021, merupakan perusahaan yang bergerak di bidang General
@@ -61,10 +73,10 @@
             <p class="text-justify">
               Jl. Kapten Darmo Sugondo,Panggang, Gending, Kec.Kebomas, Kabupaten Gresik, Jawa Timur 61123.
             </p>
-          </div>
-          
-          <img src="./assets//images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+          </div>  
         </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
       </div>
     </div>
 
@@ -76,15 +88,442 @@
         <br>
         <div class="grid grid-cols-2 h-full place-content-center">
           <div class="col-start-1 px-8">
-            <h1 class="text-5xl font-bold text-center mb-16">STRUKTUR ORGANISASI</h1>
-            <br>
-            <br>
-            <br>
-            <img src="./assets//images/struktur-organisasi.png" alt="Struktur Organisasi">
+            <h1 class="text-5xl font-bold text-center mb-10">STRUKTUR ORGANISASI</h1>
+            <div class="mb-14">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+            <img src="./assets/images/struktur-organisasi.png" alt="Struktur Organisasi">
           </div>
-          
-          <img src="./assets//images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
         </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">JASA KONSTRUKSI</h1>
+            <div class="mb-20 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ml-8">
+          <div class="flex flex-wrap gap-16">
+            <div class="w-4/12">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk1.png" alt="Fabrikasi Struktur">
+              <br>
+              <p class="text-center text-2xl">Fabrikasi Struktur</p>
+            </div>
+            <div class="w-4/12">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk2.png" alt="Machining Special Parts">
+              <br>
+              <p class="text-center text-2xl">Machining Special Parts</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+    
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">JASA KONSTRUKSI</h1>
+            <div class="mb-10 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-8/12 ml-8">
+          <div class="grid grid-rows-2 grid-flow-col gap-8">
+            <div class="row-span-2">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk3.png" alt="FABRIKASI DUCTING AND INSULATION">
+              <br>
+              <p class="text-center text-lg">FABRIKASI DUCTING AND INSULATION</p>
+            </div>
+            <div class="col-span-2">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk4.png" alt="FABRIKASI AND INSTALATION HOPPER">
+              <br>
+              <p class="text-center text-lg">FABRIKASI AND INSTALATION HOPPER</p>
+            </div>
+            <div class="col-span-2">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk6.png" alt="FABRIKASI EXPLOSION HOOD">
+              <br>
+              <p class="text-center text-lg">FABRIKASI EXPLOSION HOOD</p>
+            </div>
+            <div class="col-span-2">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk5.png" alt="FABRIKASI BARICADE">
+              <br>
+              <p class="text-center text-lg">FABRIKASI BARICADE</p>
+            </div>
+            <div class="col-span-2">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk7.png" alt="BENDING PROFILE">
+              <br>
+              <p class="text-center text-lg">BENDING PROFILE</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">WORKSHOP FACILITIES</h1>
+            <div class="mb-20 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ml-8 w-10/12">
+          <div class="flex gap-16">
+            <div class="w-full">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf1.png" alt="BENDING MACHINE 10 TON">
+              <br>
+              <p class="text-center text-2xl">BENDING MACHINE 10 TON</p>
+            </div>
+            <div class="w-full">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf2.png" alt="DRIL AND SCRAP MACHINE">
+              <br>
+              <p class="text-center text-2xl">DRIL AND SCRAP MACHINE</p>
+            </div>
+            <div class="w-full">
+              <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf3.png" alt="GANTRY CRANE 10 TON">
+              <br>
+              <p class="text-center text-2xl">GANTRY CRANE 10 TON</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+    
+    
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">STANDART PROSES PRODUKSI STEEL</h1>
+            <div class="mb-10 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ml-8 w-10/12">
+          <div class="flex gap-16">
+            <div class="w-full">
+              <img class="w-full" src="./assets/images/spps1.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">PENGENDALIAN PRODUK TAK SESUAI</h1>
+            <div class="mb-6 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-4/12 mx-auto">
+          <img class="w-full" src="./assets/images/ppts1.png">
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">CORRECTIVE ACTION</h1>
+            <div class="mb-6 grid grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-6/12 mx-auto">
+          <img class="w-full" src="./assets/images/ca1.png">
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-auto px-8">
+            <h1 class="text-5xl font-bold mb-10">SUPPLIER</h1>
+            <div class="mb-6">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="w-10/12 ml-8">
+          <div class="grid grid-cols-3 gap-14">
+            <div class="col-span-2">
+              <br>
+              <br>
+              <br>
+              <h3 class="text-2xl font-medium text-primary mb-3">STRUCTURAL & PLATES STEEL</h3>
+              <p class="text-justify">UNP, ANGLE, H-BEAM, WF-BEAM, HOLLOW, <br>ROUNDBAR, PLATE SS400/A36/SA516Gr.70/304L/316L</p>
+              <br>
+
+              <h3 class="text-2xl font-medium text-primary mb-3">PIPE & FITTING</h3>
+              <p class="text-justify">
+                PIPE A106 SEAMLESS, WELDED PIPE, ELBOW, <br>REDUCE, TEE, BALL VALVE, FLANGE, BUSHING, DLL
+              </p>
+              <br>
+
+              <h3 class="text-2xl font-medium text-primary mb-3">SPAREPART & MACHINES</h3>
+              <p class="text-justify">
+                BEARING, BOLT & NUT, SPRING, FLEXIBLE JOINT, <br>SEALS, ELECTRIC MOTOR, POMPA, INVERTER, POWER TRANSMISSION, DLL
+              </p>
+            </div>
+            <div>
+              <img class="w-full" src="./assets/images/s1.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+    
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-auto px-8">
+            <h1 class="text-5xl font-bold mb-10">JASA ENGINEERING</h1>
+            <div class="mb-8">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="w-11/12 ml-8">
+          <div class="grid grid-cols-2 gap-14">
+            <div>
+              <br>
+              <br>
+              <ul class="list-disc">
+                <li><h3 class="text-xl font-medium text-primary">3D DESIGN & DRAWING MECHANICAL & SIPIL (AUTOCAD,DLL)</h3></li>
+                <li><h3 class="text-xl font-medium text-primary">DESAIN INTERIOR DAN BANGUNAN/GEDUNG</h3></li>
+                <li><h3 class="text-xl font-medium text-primary">RENCANA BIAYA PROYEK</h3></li>
+                <li><h3 class="text-xl font-medium text-primary">KALKULASI PERENCANAAN MECHANICAL & SIPIL</h3></li>
+                <li><h3 class="text-xl font-medium text-primary">REDRAWING</h3></li>
+              </ul>
+            </div>
+            <div>
+              <img class="w-full" src="./assets/images/je1.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+    
+    
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-auto px-8">
+            <h1 class="text-5xl font-bold mb-10">INTERIOR DESAIN</h1>
+            <div>
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="w-11/12 ml-8">
+          <br>
+          <br>
+          <div class="grid grid-cols-2 gap-14">
+            <div>
+              <br>
+              <p class="mb-2">YUFA NAJA GROUP Mendesain secara Profesional yang menciptakan desain yang lebih efisien dan menambah nilai Estetika dan Kenyamanan.</p>
+              <p class="font-bold mb-2">Interior Desain antara lain:</p>
+              <ul class="list-disc list-inside">
+                <li class="mb-1">Jasa Desain Interior</li>
+                <li class="mb-1">Jasa Arsitekture Desain</li>
+                <li class="mb-1">Produksi dan Pemasangan Interior (Custom)</li>
+                <li class="mb-1">Produksi Furniture (Custom)</li>
+                <li class="mb-1">Pengadaan Furniture</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold mb-2">SERVIS:</p>
+              <p class="mb-2">DESAIN INTERIOR DAN PRODUKSI INTERIOR</p>
+              <div class="flex gap-4">
+                <div>
+                  <p class="font-bold text-sm text-primary mb-2">RESIDENTIAL:</p>
+                  <li class="mb-1">Living Room</li>
+                  <li class="mb-1">Bed Room</li>
+                  <li class="mb-1">Dinning Room</li>
+                  <li class="mb-1">Kitchen</li>
+                  <li class="mb-1">Kids Room</li>
+                  <li class="mb-1">Entertainment Room</li>
+                  <li class="mb-1">Home Office</li>
+                  <li class="mb-1">BathRoom</li>
+                  <li class="mb-1">Appartement</li>
+                  <li class="mb-1">Hobby Room</li>
+                </div>
+                <div>
+                  <p class="font-bold text-sm text-primary mb-2">COMMERCIAL:</p>
+                  <li class="mb-1">Interior Office</li>
+                  <li class="mb-1">Café</li>
+                  <li class="mb-1">Hotel</li>
+                  <li class="mb-1">Bakery Shop</li>
+                  <li class="mb-1">Clothing Shop</li>
+                  <li class="mb-1">Barbershop</li>
+                  <li class="mb-1">DLL</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-auto px-8">
+            <h1 class="text-5xl font-bold mb-10">FURNITURE</h1>
+            <div class="mb-8">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="w-11/12 ml-8">
+          <div class="grid grid-cols-2 gap-14">
+            <div>
+              <p class="mb-2">YUFA NAJA GROUP Menyediakan macam-macam jenis furniture, Baik Custom Furniture sesuai dengan keinginan Customer maupun berasal dari Retailer yang Terbaik dengan Harga yang terjangkau dan Kompetetif.</p>
+              <p class="font-bold mb-2">Interior Desain antara lain:</p>
+              <ul class="list-disc list-inside">
+                <li class="mb-1">Jasa Desain Interior</li>
+                <li class="mb-1">Jasa Arsitekture Desain</li>
+                <li class="mb-1">Produksi dan Pemasangan Interior (Custom)</li>
+                <li class="mb-1">Produksi Furniture (Custom)</li>
+                <li class="mb-1">Pengadaan Furniture</li>
+              </ul>
+            </div>
+            <div>
+              <img class="w-full" src="./assets/images/f1.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+      </div>
+    </div>
+    
+
+    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid grid-cols-2 h-full place-content-center">
+          <div class="col-auto px-8">
+            <h1 class="text-5xl font-bold mb-10">ARSITEKTUR</h1>
+            <div class="mb-8">
+              <div class="grid grid-cols-2 gap-14">
+                <div class="bg-primary h-3"></div>
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="w-11/12 ml-8">
+          <div class="grid grid-cols-2 gap-14">
+            <div>
+              <p class="mb-2">YUFA NAJA GROUP Mempunyai Arsitek yang berpengalaman di bidang nya. Tarif kami sangat Fleksibel sehingga menjangkau semua kalangan. Output yang kami berikan sesuai kebutuhan Anda.</p>
+              <p class="font-bold mb-2">Output Arsitektur Antara lain:</p>
+              <ul class="list-disc list-inside">
+                <li class="mb-1">Denah</li>
+                <li class="mb-1">Tampak Depan,Samping,Belakang dan Atas</li>
+                <li class="mb-1">Denah Plafon</li>
+                <li class="mb-1">Denah Atap</li>
+                <li class="mb-1">Denah Kusen, Pintu Dan Jendela</li>
+                <li class="mb-1">Denah kuda-kuda / Structure</li>
+                <li class="mb-1">Gambar Potongan</li>
+                <li class="mb-1">Gambar Detail</li>
+              </ul>
+            </div>
+            <div>
+              <img class="w-full" src="./assets/images/je1.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
       </div>
     </div>
   </div>
