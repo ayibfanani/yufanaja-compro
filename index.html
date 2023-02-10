@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -20,35 +20,112 @@
 
 <body>
   <div>
-    <div class="h-screen bg-white bg-cover bg-center" style="background-image: url('./assets/images/bg1.png')">
-      <div class="grid grid-cols-2 h-full place-content-center">
-        <div class="col-start-2 col-span-4 ml-8 pr-10" style="margin-top: -4rem;">
-          <img src="./assets/images/logo1.png" alt="Logo 1" class="w-3/6 mb-6 mx-auto">
-
-          <h2 class="text-2xl font-medium text-center">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
-          <br>
-          <br>
-          <br>
-          <br>
-          <h1 class="text-6xl font-bold">COMPANY <br>PROFILE</h1>
+    <a id="menu-close-button" class="left-3 top-3 fixed z-10 bg-white px-2 py-3 border rounded shadow-lg cursor-pointer">
+      <div class="space-y-1">
+        <div class="w-5 h-0.5 bg-gray-600"></div>
+        <div class="w-5 h-0.5 bg-gray-600"></div>
+        <div class="w-5 h-0.5 bg-gray-600"></div>
+      </div>
+    </a>
+    <div id="menu-open" class="h-screen bg-white fixed z-10 w-full hidden pl-4">
+      <br>
+      <a id="menu-open-button" class="block cursor-pointer">
+        <div class="space-y-1">
+          <div class="w-5 h-0.5 bg-gray-600 rotate-45 translate-y-1"></div>
+          <div class="w-5 h-0.5 bg-gray-600 -rotate-45 -translate-y-0.5"></div>
         </div>
+      </a>
+
+      <br>
+      <br>
+      <ul id="menu-open-lists" class="text-center">
+        <li class="mb-4">
+          <a href="#home" class="list-menu text-xl">Beranda</a>
+        </li>
+        <li class="mb-4">
+          <a href="#about" class="list-menu text-xl">Tentang Perusahaan</a>
+        </li>
+        <li class="mb-4">
+          <a href="#organization-structure" class="list-menu text-xl">Struktur Organisasi</a>
+        </li>
+        <li class="mb-4">
+          <a href="#construction-service" class="list-menu text-xl">Jasa Konstruksi</a>
+        </li>
+        <li class="mb-4">
+          <a href="#workshop-facilities" class="list-menu text-xl">Workshop Facilities</a>
+        </li>
+        <li class="mb-4">
+          <a href="#spps" class="list-menu text-xl">Standart Proses Produksi Steel</a>
+        </li>
+        <li class="mb-4">
+          <a href="#ppts" class="list-menu text-xl">Pengendalian Produk Tak Sesuai</a>
+        </li>
+        <li class="mb-4">
+          <a href="#ca" class="list-menu text-xl">Corrective Action</a>
+        </li>
+        <li class="mb-4">
+          <a href="#s" class="list-menu text-xl">Supplier</a>
+        </li>
+        <li class="mb-4">
+          <a href="#je" class="list-menu text-xl">Jasa Engineering</a>
+        </li>
+        <li class="mb-4">
+          <a href="#id" class="list-menu text-xl">Interior Desain</a>
+        </li>
+        <li class="mb-4">
+          <a href="#f" class="list-menu text-xl">Furniture</a>
+        </li>
+        <li class="mb-4">
+          <a href="#a" class="list-menu text-xl">Arsitektur</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="home" class="h-screen bg-white bg-cover md:bg-center relative" style="background-image: url('./assets/images/bg1.png'); background-position: 4%;">
+      <div class="grid grid-cols-2 md:h-full md:place-content-center">
+        <div class="col-start-2 col-span-4 ml-8 pr-10">
+          <img src="./assets/images/logo1.png" alt="Logo 1" class="md:w-3/6 md:mb-6 mx-auto mt-10 md:mt-0">
+          <br>
+
+          <h2 class="text-2xl font-medium text-center hidden md:block font-mono">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
+          <br>
+          <br>
+        </div>
+      </div>
+
+      <div class="md:hidden">
+        <br>
+        <br>
+        <br>
+        <h2 class="text-2xl font-medium text-center md:hidden font-mono text-slate-700">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
+      </div>
+
+      <div class="mb-20 md:mb-0 md:mt-10 mt-0 absolute bottom-0 w-full bottom-10 text-center">
+        <a href="#about">
+          <div class="mx-auto mb-2 animate-bounce bg-white border border-2 dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-2xl rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-indigo-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </div>
+
+          <p class="text-neutral-700">Tekan untuk melihat</p>
+        </a>
       </div>
     </div>
 
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg2.png')">
+    <div id="about" class="min-h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg2.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
-            <h1 class="text-5xl font-bold text-center mb-10">Tentang Perusahaan</h1>
+            <h1 class="text-5xl font-bold mb-10">Tentang Perusahaan</h1>
             <div class="mb-6">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
-                <div class="bg-primary h-3"></div>
+                <div class="bg-primary h-3 hidden md:block"></div>
               </div>
             </div>
 
@@ -76,56 +153,58 @@
           </div>  
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg2.png')">
+    <div id="organization-structure" class="min-h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg2.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
-            <h1 class="text-5xl font-bold text-center mb-10">STRUKTUR ORGANISASI</h1>
+            <h1 class="text-5xl font-bold mb-10">STRUKTUR ORGANISASI</h1>
             <div class="mb-14">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
-                <div class="bg-primary h-3"></div>
+                <div class="bg-primary h-3 hidden md:block"></div>
               </div>
             </div>
             <img src="./assets/images/struktur-organisasi.png" alt="Struktur Organisasi">
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="construction-service" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
             <h1 class="text-5xl font-bold mb-10">JASA KONSTRUKSI</h1>
-            <div class="mb-20 grid grid-cols-2 gap-14">
+            <div class="mb-20 grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="ml-8">
-          <div class="flex flex-wrap gap-16">
-            <div class="w-4/12">
+        <div class="md:ml-8 px-8 md:px-0">
+          <div class="md:flex flex-wrap gap-16">
+            <div class="md:w-4/12 w-full mb-8 md:mb-0">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk1.png" alt="Fabrikasi Struktur">
               <br>
               <p class="text-center text-2xl">Fabrikasi Struktur</p>
             </div>
-            <div class="w-4/12">
+            <div class="md:w-4/12 w-full mb-8 md:mb-0">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk2.png" alt="Machining Special Parts">
               <br>
               <p class="text-center text-2xl">Machining Special Parts</p>
@@ -133,46 +212,48 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
     
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
             <h1 class="text-5xl font-bold mb-10">JASA KONSTRUKSI</h1>
-            <div class="mb-10 grid grid-cols-2 gap-14">
+            <div class="mb-10 grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="w-8/12 ml-8">
-          <div class="grid grid-rows-2 grid-flow-col gap-8">
-            <div class="row-span-2">
+        <div class="md:w-8/12 md:ml-8 px-8 md:px-0">
+          <div class="md:grid md:grid-rows-2 md:grid-flow-col md:gap-8">
+            <div class="mb-8 md:mb-0 row-span-2">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk3.png" alt="FABRIKASI DUCTING AND INSULATION">
               <br>
               <p class="text-center text-lg">FABRIKASI DUCTING AND INSULATION</p>
             </div>
-            <div class="col-span-2">
+            <div class="mb-8 md:mb-0 col-span-2">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk4.png" alt="FABRIKASI AND INSTALATION HOPPER">
               <br>
               <p class="text-center text-lg">FABRIKASI AND INSTALATION HOPPER</p>
             </div>
-            <div class="col-span-2">
+            <div class="mb-8 md:mb-0 col-span-2">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk6.png" alt="FABRIKASI EXPLOSION HOOD">
               <br>
               <p class="text-center text-lg">FABRIKASI EXPLOSION HOOD</p>
             </div>
-            <div class="col-span-2">
+            <div class="mb-8 md:mb-0 col-span-2">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk5.png" alt="FABRIKASI BARICADE">
               <br>
               <p class="text-center text-lg">FABRIKASI BARICADE</p>
             </div>
-            <div class="col-span-2">
+            <div class="mb-8 md:mb-0 col-span-2">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk7.png" alt="BENDING PROFILE">
               <br>
               <p class="text-center text-lg">BENDING PROFILE</p>
@@ -180,38 +261,39 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="workshop-facilities" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
             <h1 class="text-5xl font-bold mb-10">WORKSHOP FACILITIES</h1>
-            <div class="mb-20 grid grid-cols-2 gap-14">
+            <div class="mb-20 grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="ml-8 w-10/12">
-          <div class="flex gap-16">
-            <div class="w-full">
+        <div class="md:w-8/12 md:ml-8 px-8 md:px-0">
+          <div class="md:flex gap-16">
+            <div class="w-full mb-8 md:mb-0">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf1.png" alt="BENDING MACHINE 10 TON">
               <br>
               <p class="text-center text-2xl">BENDING MACHINE 10 TON</p>
             </div>
-            <div class="w-full">
+            <div class="w-full mb-8 md:mb-0">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf2.png" alt="DRIL AND SCRAP MACHINE">
               <br>
               <p class="text-center text-2xl">DRIL AND SCRAP MACHINE</p>
             </div>
-            <div class="w-full">
+            <div class="w-full mb-8 md:mb-0">
               <img class="w-full rounded-lg shadow-xl" src="./assets/images/wf3.png" alt="GANTRY CRANE 10 TON">
               <br>
               <p class="text-center text-2xl">GANTRY CRANE 10 TON</p>
@@ -219,95 +301,105 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
     
     
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="spps" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
             <h1 class="text-5xl font-bold mb-10">STANDART PROSES PRODUKSI STEEL</h1>
-            <div class="mb-10 grid grid-cols-2 gap-14">
+            <div class="mb-10 md:grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="ml-8 w-10/12">
-          <div class="flex gap-16">
+        <div class="md:ml-8 md:w-10/12">
+          <div class="md:flex gap-16">
             <div class="w-full">
               <img class="w-full" src="./assets/images/spps1.png">
             </div>
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="ppts" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
-          <div class="col-start-1 px-8">
-            <h1 class="text-5xl font-bold mb-10">PENGENDALIAN PRODUK TAK SESUAI</h1>
-            <div class="mb-6 grid grid-cols-2 gap-14">
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8 break-words">
+            <h1 class="text-4xl md:text-5xl font-bold mb-10">PENGENDALIAN PRODUK TAK SESUAI</h1>
+            <div class="mb-6 grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="w-4/12 mx-auto">
+        <div class="md:w-4/12 md:mx-auto px-8 md:px-0s">
           <img class="w-full" src="./assets/images/ppts1.png">
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="ca" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-start-1 px-8">
             <h1 class="text-5xl font-bold mb-10">CORRECTIVE ACTION</h1>
-            <div class="mb-6 grid grid-cols-2 gap-14">
+            <div class="mb-6 grid md:grid-cols-2 gap-14">
               <div class="bg-primary h-3"></div>
             </div>
           </div>
         </div>
         
-        <div class="w-6/12 mx-auto">
+        <div class="md:w-6/12 px-8 md:px-0 mx-auto">
           <img class="w-full" src="./assets/images/ca1.png">
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="s" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-auto px-8">
             <h1 class="text-5xl font-bold mb-10">SUPPLIER</h1>
             <div class="mb-6">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="w-10/12 ml-8">
-          <div class="grid grid-cols-3 gap-14">
+        <div class="md:w-10/12 md:ml-8 px-8 md:px-0">
+          <div class="md:grid md:grid-cols-3 md:gap-14">
             <div class="col-span-2">
               <br>
               <br>
@@ -333,29 +425,30 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
     
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="je" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-auto px-8">
             <h1 class="text-5xl font-bold mb-10">JASA ENGINEERING</h1>
             <div class="mb-8">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="w-11/12 ml-8">
-          <div class="grid grid-cols-2 gap-14">
+        <div class="md:w-11/12 md:ml-8 px-8 md:px-0">
+          <div class="grid md:grid-cols-2 gap-14">
             <div>
-              <br>
               <br>
               <ul class="list-disc">
                 <li><h3 class="text-xl font-medium text-primary">3D DESIGN & DRAWING MECHANICAL & SIPIL (AUTOCAD,DLL)</h3></li>
@@ -371,32 +464,33 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
     
     
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="id" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-auto px-8">
             <h1 class="text-5xl font-bold mb-10">INTERIOR DESAIN</h1>
             <div>
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="w-11/12 ml-8">
+        <div class="md:w-11/12 md:ml-8 px-8 md:px-0">
           <br>
           <br>
-          <div class="grid grid-cols-2 gap-14">
+          <div class="grid md:grid-cols-2 gap-14">
             <div>
               <br>
               <p class="mb-2">YUFA NAJA GROUP Mendesain secara Profesional yang menciptakan desain yang lebih efisien dan menambah nilai Estetika dan Kenyamanan.</p>
@@ -441,28 +535,30 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="f" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-auto px-8">
             <h1 class="text-5xl font-bold mb-10">FURNITURE</h1>
             <div class="mb-8">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="w-11/12 ml-8">
-          <div class="grid grid-cols-2 gap-14">
+        <div class="md:w-11/12 md:ml-8 px-8 md:px-0">
+          <div class="grid md:grid-cols-2 gap-14">
             <div>
               <p class="mb-2">YUFA NAJA GROUP Menyediakan macam-macam jenis furniture, Baik Custom Furniture sesuai dengan keinginan Customer maupun berasal dari Retailer yang Terbaik dengan Harga yang terjangkau dan Kompetetif.</p>
               <p class="font-bold mb-2">Interior Desain antara lain:</p>
@@ -480,29 +576,31 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
       </div>
     </div>
     
 
-    <div class="h-screen bg-white bg-cover bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+    <div id="a" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
       <div class="container mx-auto">
         <br>
         <br>
         <br>
-        <div class="grid grid-cols-2 h-full place-content-center">
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
           <div class="col-auto px-8">
             <h1 class="text-5xl font-bold mb-10">ARSITEKTUR</h1>
             <div class="mb-8">
-              <div class="grid grid-cols-2 gap-14">
+              <div class="grid md:grid-cols-2 gap-14">
                 <div class="bg-primary h-3"></div>
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="w-11/12 ml-8">
-          <div class="grid grid-cols-2 gap-14">
+        <div class="md:w-11/12 md:ml-8 px-8 md:px-0">
+          <div class="grid md:grid-cols-2 gap-14">
             <div>
               <p class="mb-2">YUFA NAJA GROUP Mempunyai Arsitek yang berpengalaman di bidang nya. Tarif kami sangat Fleksibel sehingga menjangkau semua kalangan. Output yang kami berikan sesuai kebutuhan Anda.</p>
               <p class="font-bold mb-2">Output Arsitektur Antara lain:</p>
@@ -523,10 +621,211 @@
           </div>
         </div>
 
-        <img src="./assets/images/logo1.png" alt="Logo 1" class="absolute bottom-1 right-8 w-24 mb-6 mx-auto">
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div id="ppjid" class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-7">PROSEDUR PROSES JASA INTERIOR DESAIN</h1>
+            <div class="md:grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+            <p class="font-semibold text-2xl text-primary mt-2">PROSEDUR PROSES</p>
+          </div>
+        </div>
+        
+        <div class="md:w-7/12 mx-auto px-8 md:px-0">
+          <div class="md:flex gap-16">
+            <img class="w-full" src="./assets/images/ppjid1.png">
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
+      </div>
+    </div>
+    
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-7">PROSEDUR PROSES JASA PRODUKSI INTERIOR</h1>
+            <div class="md:grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+            <p class="font-semibold text-2xl text-primary mt-2">PROSEDUR PROSES</p>
+          </div>
+        </div>
+        
+        <div>
+          <div class="md:flex gap-10 w-full px-8">
+            <img class="md:w-7/12" src="./assets/images/ppjid2.png">
+            <div>
+              <div class="w-full">
+                <p class="font-semibold text-center text-lg text-primary mt-2">SYARAT DAN KETENTUAN</p>  
+              </div>
+              <br>
+              
+              <ol class="list-decimal">
+                <li>Pembayaran Down payment Sebesar 50% After Penandatangan Kontrak</li>
+                <li>Pembayaran Selanjutnya diatur dalam Kontrak yang sudah di sepakati kedua pihak</li>
+                <li>Revisi desain dapat dilakukan sebelum Penandatangan Kontrak, kecuali diatur dalam ketentuan penambahan (Addendum)</li>
+                <li>Estimasi Waktu kerja disesuaikan dengan Skala Pekerjaan (Besar,Sedang,Kecil) dan berdasarkan kesepakatan</li>
+                <li>Apabila terjadi Force Majeur diatur kemudian dalam ketentuan tambahan (Addendum).</li>
+                <li>Apabila terjadi pembatalan Order secara sepihak dari pihak klien, maka Down Payment tidak dapat dikembalikan</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">PORTOFOLIO INTERIOR DAN FURNITUR</h1>
+            <div class="grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+            <p class="font-semibold text-2xl text-primary mt-2">KITCHEN SET</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="md:ml-8 px-8 md:px-0">
+          <div class="md:flex flex-wrap gap-10">
+            <div class="md:h-72 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf1.png">
+            </div>
+            <div class="md:h-72 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf2.png">
+            </div>
+            <div class="md:h-72 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf3.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+      </div>
+    </div>
+    
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">PORTOFOLIO INTERIOR DAN FURNITUR</h1>
+            <div class="grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+            <p class="font-semibold text-2xl text-primary mt-2">APPARTEMENT</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="md:ml-8 px-8 md:px-0">
+          <div class="md:flex flex-wrap gap-10">
+            <div class="md:h-64 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf4.png">
+            </div>
+            <div class="md:h-64 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf5.png">
+            </div>
+            <div class="md:h-64 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf6.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+      </div>
+    </div>
+    
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">PORTOFOLIO INTERIOR DAN FURNITUR</h1>
+            <div class="grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+            <p class="font-semibold text-2xl text-primary mt-2">LIVING ROOM</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="md:ml-8 px-8 md:px-0">
+          <div class="md:flex flex-wrap gap-10">
+            <div class="md:h-80 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf7.png">
+            </div>
+            <div class="md:h-80 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf8.png">
+            </div>
+            <div class="md:h-80 mb-8 md:mb-0">
+              <img class="h-full shadow-xl" src="./assets/images/pidf9.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
       </div>
     </div>
   </div>
+
+  <script>
+    (function(){
+      document.getElementById("menu-close-button").addEventListener("click", (e) => {
+        let element = document.getElementById("menu-open");
+        element.classList.remove("hidden");
+      });
+      
+      document.getElementById("menu-open-button").addEventListener("click", (e) => {
+        let element = document.getElementById("menu-open");
+        element.classList.add("hidden");
+      });
+      
+      const listsMenu = document.getElementsByClassName("list-menu");
+      Array.from(listsMenu).forEach(element => {
+        element.addEventListener('click', (e) => {
+          let menuOpenElement = document.getElementById("menu-open");
+          menuOpenElement.classList.add("hidden");
+        })
+      })
+    })();
+  </script>
 </body>
 
 </html>
