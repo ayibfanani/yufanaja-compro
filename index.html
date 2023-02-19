@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -87,10 +91,10 @@
     <div id="home" class="h-screen bg-white bg-cover md:bg-center relative" style="background-image: url('./assets/images/bg1.png'); background-position: 4%;">
       <div class="grid grid-cols-2 md:h-full md:place-content-center">
         <div class="col-start-2 col-span-4 ml-8 pr-10">
-          <img src="./assets/images/logo1.png" alt="Logo 1" class="md:w-3/6 md:mb-6 mx-auto mt-10 md:mt-0">
+          <img src="./assets/images/logo1.png" alt="Logo 1" class="md:w-3/6 md:mb-6 mx-auto mt-10 md:mt-0 animate__animated animate__fadeInDown">
           <br>
 
-          <h2 class="text-2xl font-medium text-center hidden md:block font-mono">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
+          <h2 class="text-2xl font-medium text-center hidden md:block font-mono animate__animated animate__fadeInDown">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
           <br>
           <br>
         </div>
@@ -100,7 +104,7 @@
         <br>
         <br>
         <br>
-        <h2 class="text-2xl font-medium text-center md:hidden font-mono text-slate-700">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
+        <h2 class="text-2xl font-medium text-center md:hidden font-mono text-slate-700 animate__animated animate__fadeInDown">General Contractor, Supplier, Interior Furniture, <br>Adv & Promosi</h2>
       </div>
 
       <div class="mb-20 md:mb-0 md:mt-10 mt-0 absolute bottom-0 w-full bottom-10 text-center">
@@ -199,22 +203,20 @@
             </div>
           </div>
         </div>
-        
+
         <div class="md:ml-8 px-8 md:px-0">
-          <div class="md:flex flex-wrap gap-16">
-            <div class="md:w-4/12 w-full mb-8 md:mb-0">
-              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk1.png" alt="Fabrikasi Struktur">
-              <br>
-              <p class="text-center text-2xl">Fabrikasi Struktur</p>
+          <div class="md:flex flex-wrap gap-10">
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/jk1.png">
+              <p class="text-2xl font-semibold">FABRIKASI STRUKTUR</p>
             </div>
-            <div class="md:w-4/12 w-full mb-8 md:mb-0">
-              <img class="w-full rounded-lg shadow-xl" src="./assets/images/jk2.png" alt="Machining Special Parts">
-              <br>
-              <p class="text-center text-2xl">Machining Special Parts</p>
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/jk2.png">
+              <p class="text-2xl font-semibold">Machining Special Parts</p>
             </div>
           </div>
         </div>
-
+        
         <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
         <br>
         <br>
@@ -944,6 +946,102 @@
             </div>
             <div class="md:h-80 mb-8 md:mb-0">
               <img class="h-full shadow-xl" src="./assets/images/pidf21.png">
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+      </div>
+    </div>
+    
+    
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">PREVENTIF ACTION</h1>
+            <div class="grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="md:w-8/12 md:ml-8 px-8 md:px-0">
+          <div class="md:grid gap-10 place-content-center grid-cols-3 text-center">
+            <div class="relative bg-yellow-100 p-8 rounded-lg shadow-lg md:mb-0 mb-8">
+              <div class="w-3/6 mx-auto mb-4">
+                <img src="./assets/images/info.png">
+              </div>
+
+              <p class="text-2xl font-semibold">Sumber Informasi</p>
+              <br>
+              <p>Mendeteksi, menganalisa dan menghilangkan penyebab potensial dari ketidaksesuaian</p>
+            </div>
+            <div class="relative bg-blue-300 p-8 rounded-lg shadow-lg md:mb-0 mb-8">
+              <div class="w-3/6 mx-auto mb-4">
+                <img src="./assets/images/settings.png">
+              </div>
+
+              <p class="text-2xl font-semibold">Penentuan & Penerapan</p>
+              <br>
+              <p>Customer spect untuk menghindari terjadinya ketidaksesuaian.</p>
+            </div>
+            <div class="relative bg-green-300 p-8 rounded-lg shadow-lg md:mb-0 mb-8">
+              <div class="w-3/6 mx-auto mb-4">
+                <img src="./assets/images/record.png">
+              </div>
+
+              <p class="text-2xl font-semibold">Rekaman</p>
+              <br>
+              <p>Hasil  tindakan pencegahan yang dilaksanakan terdokumentasi dan dijadikan subyek untuk Tinjauan Manajemen</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/images/logo1.png" alt="Logo 1" class="hidden bottom-1 right-8 w-24 mb-6 mx-auto md:block md:absolute">
+      </div>
+    </div>
+
+    <div class="min-h-screen bg-white bg-cover bg-right-top md:bg-center relative" style="background-image: url('./assets/images/bg3.png')">
+      <div class="container mx-auto">
+        <br>
+        <br>
+        <br>
+        <div class="grid md:grid-cols-2 h-full md:place-content-center">
+          <div class="col-start-1 px-8">
+            <h1 class="text-5xl font-bold mb-10">DOCUMENT DATA</h1>
+            <div class="grid md:grid-cols-2 gap-14">
+              <div class="bg-primary h-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="md:ml-8 px-8 md:px-0">
+          <div class="md:flex flex-wrap gap-10">
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/sktpajak.jpeg">
+              <p class="text-2xl font-semibold">SKT PAJAK</p>
+            </div>
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/pkp.jpeg">
+              <p class="text-2xl font-semibold">PKP</p>
+            </div>
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/nib.jpeg">
+              <p class="text-2xl font-semibold">NIB</p>
+            </div>
+            <div class="md:h-80 mb-8 md:mb-0 text-center">
+              <img class="h-full shadow-xl mb-4 rounded-lg" src="./assets/images/sktadminkum.jpeg">
+              <p class="text-2xl font-semibold">SKT ADMINKUM</p>
             </div>
           </div>
         </div>
